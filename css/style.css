@@ -1,0 +1,820 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+/* Navigation mobil */
+
+header{
+    background-color: #cbdebd;
+    height: 100px;
+}
+
+.nav-branding img{
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-menu{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   position: absolute;
+   left: -100%;
+   top: 100px;
+   flex-direction: column;
+   background-color: #cbdebd;
+   width: 100%;
+   text-align: center;
+   transition: 0.6s;
+   list-style-type: none;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+a {
+    color: #364b31;
+}
+/* Navigation slut*/
+
+/* Forside mobil */
+.forside > .billede-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.forside-billede-sort-te{
+    width: 80%;
+}
+
+.text-1{
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+    padding-left: 50px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #4C76A7;
+}
+
+.knap{
+    background-color: #cbcbcb;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.knap-c{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.forside > .billede-container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.midterbillede{
+    width: 80%;
+}
+
+.text-2{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.text-2 h2{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #364B31;
+}
+
+.knap2{
+    background-color: #cbcbcb;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.knap-d{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+.sort-tepose {
+    width: 30%;
+}
+.grøn-tepose {
+    width: 30%;
+}
+
+.hvid-tepose {
+    width: 30%;
+}
+
+.klima {
+    border-style: solid;
+    border-width: 10px;
+    color: #dfedd5;
+    background-color: #dfedd5;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+}
+
+.klima h2 {
+    text-align: center;
+    color: #364B31;
+}
+
+
+.klima span {
+    color: #4C76A7;
+    font-size: 40px;
+}
+
+.bæredygtighed p {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.te-poser {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.te-poser > * {
+    flex: 1;
+}
+/* forside mobil slut */
+
+
+/* varianter mobil */
+
+.varianter {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.varianter > .billede-container3{
+    width: 100%;
+    display: flex;
+}
+
+.sort-te-variant{
+    width: 60%;
+    padding-top: 20px;
+}
+
+.klassisk-sort-te h3{
+    text-align: center;
+    padding:20px;
+}
+
+.klassisk-sort-te p{
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.grøn-te-variant{
+    width: 60%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.camille-te-variant{
+    width: 60%;
+    padding-bottom: 40px;
+}
+
+.nyhed-text h4{
+    text-align: center;
+    font-size: 30px;
+    color: #375530;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nyhed-text {
+    border-style: solid;
+    border-width: 10px;
+    color: #dfedd5;
+    background-color: #dfedd5;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+}
+
+.nyhed-text p{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+.nyhed-text span{
+    color: black;
+    font-weight: bold;
+}
+
+.grøn-te h4{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 15px;
+    color: #364B31;
+}
+.camille-te h4{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 15px;
+    color: #364B31;
+}
+
+/* varianter mobil slut */
+
+
+/* om medova mobil */
+
+.om-medova-side {
+    background-color: #dae5d2;
+    text-align: center;
+}
+    
+.om-medova-side > .billede-container3{
+    width: 100%;
+    display: flex;
+}
+
+.om-medova-side p {
+    text-align: justify;
+    padding: 40px;
+}
+
+.historie h2{
+    padding-top: 40px;
+}
+
+.produkt-info h2{
+    padding-top: 40px;
+    padding: 20px;
+}
+
+.produkt-info p{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.produkt-info {
+    border-style: solid;
+    background-color: #9bbd91;
+    border-color: #9bbd91;
+    border-bottom-width: 40px;
+}
+
+.te-mark1{
+    width: 95%;
+    padding: 20px;
+}
+
+.te-mark2{
+    width: 95%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.infographic {
+    width: 90%;
+}
+
+.fordele p{
+    padding-bottom: 40px;
+}
+
+.fordele h2 {
+    padding-top: 50px;
+}
+
+/* om medova mobil slut */
+
+
+/* kontakt mobil */
+.kontakt-side {
+    background-color:#efefd0 ;
+}
+
+.kontakt-os{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.kontakt-os p {
+    padding-top: 40px;
+}
+
+.te {
+    width: 100%;
+    padding-top: 180px;
+
+}
+
+/* kontakt mobil slut */
+
+
+
+/* Footer mobil */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #aabfa4;
+}
+
+.footer-info {
+    padding-top: 20px;
+}
+
+.social-media {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 40px;
+}
+/* footer mobil slut */
+
+
+
+
+/* RESPONSIVE */
+
+/* Responsive 426 start */
+
+@media (min-width:426px){
+        
+.nav-link:hover {
+    background-color:#364B31;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+    
+.nav-link {
+    transition: 0.6s ease;
+}
+.nav-branding img{
+    width: 120px;
+}
+
+}
+/* Responsive 426 slut */
+
+
+/* Responsive 769 start */
+@media (min-width:769px){
+
+/* nav 769 */
+.hamburger{
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 30px;
+    transition: none;
+}
+
+.nav-branding img{
+    width: 110px;
+}
+
+a {
+    font-size: 18px;
+}
+
+/*footer 769*/
+
+.mereinfo {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.kontakt{
+    padding-top: 10px;
+}
+
+.social-media ul li a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #364B31;
+    text-align: right;
+    transition: .6s;
+    color: #aabfa4;
+
+}
+
+.social-media ul li a:hover {
+    transform: translate(0,-10px);
+}
+
+.social-media {
+    padding-top: 20px;
+    color: #364b31;
+
+}
+
+.social-media ul {
+    padding-bottom: 20px;
+}
+
+.fa-facebook{
+    font-size: 40px;
+    padding: 5px;
+}
+
+.fa-instagram{
+    font-size: 40px;
+    padding: 5px 6px;
+}
+
+.fa-youtube{
+    font-size: 40px;
+    padding: 4px 3px;
+}
+
+/* Forside 769 */
+
+.knap-c{
+    display:none;
+}
+
+.knap-d{
+    display: none;
+}
+
+.forside {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.forside > * {
+    flex: 1;
+}
+
+h1 {
+    color: #4C76A7;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.forside p{
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.forside-billede-sort-te {
+    width: 100%;
+    padding-bottom: 8rem;
+    flex-direction: row;
+}
+
+
+.forside-midt {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    text-align: center;
+}
+
+.forside > * {
+    flex: 1;
+}
+
+.text-2 h2{
+    color: #364B31;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.midterbillede {
+    padding-bottom: 3rem;
+    width: 100%;
+    height: 90%;
+    flex-direction: row;
+}
+
+.bæredygtighed p{
+    font-size: 20px;
+    padding-left:32px;
+    padding-right: 32px;
+}
+
+/* varianter 769 */
+
+.sort-te {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sort-te > * {
+    flex: 1;
+}
+
+.sort-te-variant {
+    width: 80%;
+}
+
+.klassisk-sort-te {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.klassisk-sort-te p {
+    font-size: 18px;
+}
+
+.nyheder {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nyheder > * {
+    flex: 1;
+}
+
+.grøn-te-variant {
+    width: 100%;
+    padding-top: 0px;
+}
+
+.camille-te-variant {
+    width: 100%;
+}
+
+/* om medova 769 */
+
+.text-billeder {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.text-billeder > * {
+    flex: 1;
+}
+
+.historie {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+}
+
+
+.te-mark1 {
+    width: 30%;
+    padding: 0px 1px 10px 30px;
+}
+
+.te-mark2 {
+    width: 30%;
+    padding: 0px 30px 10px 1px;
+}
+
+.fordele {
+    padding-top: 50px;
+}
+
+.infographic {
+    width: 40%;
+}
+
+.text-billede {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.text-billede > * {
+    flex: 1;
+}
+
+.text-billede p {
+    padding-top: 100px;
+    padding-right: 50px;
+}
+
+}
+
+/* Responsive 769 slut */
+
+
+/* Responsive 1024 start */
+
+@media (min-width:1024px){
+
+/* forside 1024 */
+
+a {
+    font-size: 20px;
+}
+
+h1 {
+    color: #4C76A7;
+    padding-top: 90px;
+    padding-right: 100px ;
+    font-size: 50px;
+}
+
+.forside p{
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+.forside-billede-sort-te {
+    width: 90%;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.forside-midt {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.forside-midt > * {
+    flex: 1;
+}
+
+.text-2 h2{
+    color: #364B31;
+    padding-right: 100px;
+    font-size: 35px;
+}
+
+
+.midterbillede {
+    width: 80%;
+    padding-bottom: 3rem;
+    flex-direction: row;
+}
+
+.te-poser {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+}
+
+.te-poser > * {
+    flex: 1;
+}
+
+.bæredygtighed p{
+    padding-top: 50px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.klima {
+    border-top-width: 30px;
+    border-bottom-width: 30px;
+}
+.klima h2{
+    font-size: 35px ;
+}
+
+.klima span{
+    font-size: 50px;
+}
+
+
+/* varianter 1024 */
+
+.klassisk-sort-te h3{
+    font-size: 30px;
+}
+
+.nyhed-text {
+    font-size: 18px;
+}
+
+/* Om Medova 1024 */
+
+
+
+.om-medova-side h2{
+    font-size: 30px;
+}
+
+.om-medova-side p{
+    font-size: 18px;
+}
+
+/* kontakt 1024 */
+
+.kontakt-os{
+    text-align: center;
+}
+
+.kontakt-os h2{
+    font-size: 30px;
+}
+
+.kontakt-os p {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+}
+
+/* Responsive 1024 slut */
